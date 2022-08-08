@@ -19,6 +19,4 @@ Route::get('/', function () {
 
 // Route::get('tests/hello', 'App\Http\Controllers\HelloController@index');
 
-Route::get('tests', function() {
-    return view('tests.index');
-});
+Route::get('tests', 'HelloController@index');
