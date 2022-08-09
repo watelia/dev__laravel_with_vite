@@ -19,4 +19,6 @@ Route::get('/', function () {
 
 // Route::get('tests/hello', 'App\Http\Controllers\HelloController@index');
 
-Route::get('tests', 'App\Http\Controllers\HelloController@index');
+Route::get('hello', 'App\Http\Controllers\HelloController@index');
+
+Route::post('hello', 'App\Http\Controllers\HelloController@post');
