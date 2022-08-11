@@ -9,9 +9,11 @@
 
 @section('content')
     <p>ここが本文のコンテンツです</p>
-    <p>必要なだけ記述できます</p>
+    <ul>
+        @each('components.item', $data, 'item')
+    </ul>
 
-    {{-- @component('components.message')
+    @component('components.message')
         @slot('msg_title')
             CAUTION!
         @endslot
@@ -19,10 +21,7 @@
         @slot('msg_content')
             これはメッセージの表示
         @endslot
-    @endcomponent --}}
-
-    @include('components.message', ['msg_title' => 'OK', 'msg_content' => 'サブビューです'])
-
+    @endcomponent
 @endsection
 
 @section('footer')
