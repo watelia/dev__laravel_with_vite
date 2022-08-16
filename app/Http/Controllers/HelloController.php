@@ -10,7 +10,7 @@ class HelloController extends Controller
     {
         // $data は連想配列でさまざまな値を格納していく
 
-        return view('hello.index',['data' => $request->data]);
+        return view('hello.index');
     }
 
     // public function post(Request $request)
